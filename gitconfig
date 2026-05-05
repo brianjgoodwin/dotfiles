@@ -3,10 +3,49 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
 [user]
 	name = Brian Goodwin
 	email = brianjgoodwin@gmail.com
-[http]
-	postBuffer = 524288000
+
 [init]
 	defaultBranch = main
+
+[http]
+	postBuffer = 524288000
+
+[push]
+	autoSetupRemote = true
+
+[pull]
+	rebase = false
+
+[rerere]
+	enabled = true
+
+[diff]
+	colorMoved = zebra
+
+[core]
+	excludesfile = ~/.gitignore_global
+	autocrlf = input
+	editor = nano
+
+[alias]
+	# Short status -- much less noise than git status
+	st = status -sb
+
+	# Compact log with graph -- see branch history at a glance
+	lg = log --oneline --graph --decorate --all
+
+	# What changed in the last commit
+	last = log -1 HEAD --stat
+
+	# Undo last commit but keep the changes staged
+	undo = reset --soft HEAD~1
+
+	# List branches sorted by last commit date
+	branches = branch --sort=-committerdate --format='%(committerdate:relative)%09%(refname:short)'
+
+	# See what you're about to push
+	outgoing = log @{upstream}..HEAD --oneline

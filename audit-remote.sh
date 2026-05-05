@@ -53,6 +53,7 @@ FILES=(
     "claude/agents/user-story-writer.md|~/.claude/agents/user-story-writer.md"
     "claude/settings.json|~/.claude/settings.json"
     "gitconfig|~/.gitconfig"
+    "gitignore_global|~/.gitignore_global"
     "nanorc|~/.nanorc"
     "config/fish/config.fish|~/.config/fish/config.fish"
     "config/fish/conf.d/atuin.env.fish|~/.config/fish/conf.d/atuin.env.fish"

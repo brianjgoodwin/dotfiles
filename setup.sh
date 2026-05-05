@@ -66,7 +66,8 @@ echo ""
 
 # ── Git ───────────────────────────────────────────────────────────────────────
 echo "── Git ──"
-link "$DOTFILES/gitconfig" "$HOME/.gitconfig"
+link "$DOTFILES/gitconfig"        "$HOME/.gitconfig"
+link "$DOTFILES/gitignore_global" "$HOME/.gitignore_global"
 echo ""
 
 # ── Nano ──────────────────────────────────────────────────────────────────────

@@ -1,0 +1,78 @@
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+ehthumbs.db
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Nano
+*.save
+
+# Micro
+.micro/
+
+# Environment and secrets -- never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.*
+credentials.*
+
+# Dependency directories
+node_modules/
+vendor/
+.bundle/
+
+# Build output
+dist/
+build/
+*.o
+*.out
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Swift / Xcode
+*.xcuserstate
+xcuserdata/
+DerivedData/
+.build/
+*.resolved
+
+# Go
+*.test
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / misc
+*.bak
+*.tmp
+*.orig
