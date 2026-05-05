@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+
+# Claude -- never commit these
+claude/projects/
+claude/history.jsonl
+claude/sessions/
+claude/cache/
+claude/backups/
+claude/todos/
+claude/tasks/
+claude/debug/
+claude/file-history/
+claude/shell-snapshots/
+claude/session-env/
+claude/paste-cache/
+claude/ide/
+claude/statsig/
+claude/stats-cache.json
+claude/.claude.json
+
+# WTF transient state
+config/wtf/log.txt
+
+# Micro transient state
+config/micro/backups/
+config/micro/buffers/
+
+# Atuin machine-specific
+config/atuin/atuin-receipt.json
