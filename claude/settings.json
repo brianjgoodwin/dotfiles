@@ -1,5 +1,13 @@
 {
+  "model": "opus[1m]",
+  "enabledPlugins": {
+    "swift-lsp@claude-plugins-official": true
+  },
   "alwaysThinkingEnabled": false,
   "effortLevel": "medium",
-  "model": "sonnet"
+  "skipWorkflowUsageWarning": true,
+  "agentPushNotifEnabled": true,
+  "permissions": {
+    "ask": ["Bash(ssh:*)", "Bash(scp:*)", "Bash(rsync:*)"]
+  }
 }
